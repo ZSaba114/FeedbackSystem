@@ -24,13 +24,13 @@ const typeDefs = gql`
   rating: Int!
   comment: String
   createdAt: String
-  user: User           # <== Ajouté
-  product: Product     # <== Ajouté
+  user: User           
+  product: Product     
 }
 
 
 
-  # Queries pour récupérer des données
+  # Queries 
   type Query {
     users: [User!]!
     products: [Product!]!
@@ -38,7 +38,7 @@ const typeDefs = gql`
     feedbacksByProduct(productId: ID!): [Feedback!]!
   }
 
-  # Mutations pour modifier les données
+  # Mutations 
   type Mutation {
   createUser(username: String!, email: String!): User!
   createProduct(name: String!, description: String, version: String): Product!

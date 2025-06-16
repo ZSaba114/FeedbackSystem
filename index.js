@@ -1,18 +1,18 @@
 const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
-const connectDB = require('./config');
+const connectDB = require('./src/config');
 
-// Importer les schémas GraphQL (typeDefs) et les resolvers (à créer)
-const typeDefs = require('./schemas/typeDefs');
-const resolvers = require('./resolvers/resolvers');
+// importer les schémas graphql et les resolvers
+const typeDefs = require('./src/schemas/typeDefs');
+const resolvers = require('./src/resolvers/resolvers');
 
 const startServer = async () => {
   const app = express();
 
-  // Connexion à MongoDB
+  
   await connectDB();
 
-  // Création du serveur Apollo
+  // creation du serveur Apollo
   const server = new ApolloServer({ typeDefs, resolvers });
 
   await server.start();

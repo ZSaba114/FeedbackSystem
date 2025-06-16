@@ -9,6 +9,21 @@ L’objectif est de développer un web service permettant :
 - L’ajout de produits
 - La collecte de feedbacks liés aux produits
 
+## 🖼️ Screenshots
+
+### 🔍 GraphQL Playground
+![GraphQL Playground](screenshots/graphql.png)
+
+### ➕ Add User Interface
+![Add User](screenshots/addUser.png)
+
+### 💬 Submit Feedback Interface
+![Add Feedback](screenshots/addFeedback.png)
+
+### 👁️ View Feedbacks
+![View Feedback](screenshots/viewFeedback.png)
+
+
 ### 📦 Identification des entités & relations
 
 #### Entités :
